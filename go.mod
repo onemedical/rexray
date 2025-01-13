@@ -1,9 +1,11 @@
 module github.com/rexray/rexray
 
-go 1.17
+go 1.22.0
+
+toolchain go1.23.1
 
 require (
-	github.com/Azure/azure-sdk-for-go v7.0.1-beta+incompatible
+	github.com/Azure/azure-sdk-for-go v68.0.0+incompatible
 	github.com/Azure/go-autorest v7.2.5+incompatible
 	github.com/SermoDigital/jose v0.9.2-0.20161205224733-f6df55f235c2
 	github.com/akutz/gofig v0.1.9
@@ -12,7 +14,7 @@ require (
 	github.com/akutz/gotil v0.1.0
 	github.com/akutz/gournal v0.5.0
 	github.com/appropriate/go-virtualboxclient v0.0.0-00010101000000-000000000000
-	github.com/aws/aws-sdk-go v1.27.2
+	github.com/aws/aws-sdk-go v1.55.5
 	github.com/cesanta/ucl v0.0.0-20150604132806-97c016fce90e
 	github.com/cesanta/validate-json v0.0.0-20150603122804-2f16017c76fc
 	github.com/digitalocean/godo v1.2.0
@@ -22,7 +24,7 @@ require (
 	github.com/gorilla/mux v1.4.0
 	github.com/jteeuwen/go-bindata v0.0.0-00010101000000-000000000000
 	github.com/onsi/ginkgo v1.4.0
-	github.com/onsi/gomega v1.2.0
+	github.com/onsi/gomega v1.36.2
 	github.com/rubiojr/go-vhd v0.0.0-00010101000000-000000000000
 	github.com/sirupsen/logrus v0.0.0-00010101000000-000000000000
 	github.com/soheilhy/cmux v0.1.3
@@ -36,12 +38,20 @@ require (
 	github.com/thecodeteam/goioc v0.2.0
 	github.com/thecodeteam/goisilon v1.7.0
 	github.com/thecodeteam/goscaleio v0.1.1-0.20171027002729-35ca2e98889a
-	golang.org/x/crypto v0.0.0-20170825220121-81e90905daef
-	golang.org/x/net v0.0.0-20170828231752-66aacef3dd8a
+	golang.org/x/crypto v0.31.0
+	golang.org/x/net v0.33.0
 	golang.org/x/oauth2 v0.0.0-20170901193052-d89af98d7c6b
 	google.golang.org/api v0.0.0-20170906000354-38eaa396bab4
 	google.golang.org/grpc v1.6.0
-	gopkg.in/yaml.v2 v2.0.0-00010101000000-000000000000
+	gopkg.in/yaml.v2 v2.2.8
+)
+
+require (
+	github.com/google/go-cmp v0.6.0 // indirect
+	github.com/kr/pretty v0.3.1 // indirect
+	github.com/kr/text v0.2.0 // indirect
+	github.com/rogpeppe/go-internal v1.9.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
 require (
@@ -59,7 +69,7 @@ require (
 	github.com/google/go-querystring v0.0.0-20170111101155-53e6ce116135 // indirect
 	github.com/hashicorp/hcl v0.0.0-20170825171336-8f6b1344a92f // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
-	github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af // indirect
+	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/kardianos/osext v0.0.0-20170510131534-ae77be60afb1 // indirect
 	github.com/magiconair/properties v1.7.3 // indirect
 	github.com/mitchellh/mapstructure v0.0.0-20170523030023-d0303fe80992 // indirect
@@ -71,15 +81,14 @@ require (
 	github.com/spf13/jwalterweatherman v0.0.0-20170901151539-12bd96e66386 // indirect
 	github.com/spf13/viper v1.0.0 // indirect
 	github.com/tent/http-link-go v0.0.0-20130702225549-ac974c61c2f9 // indirect
-	golang.org/x/sync v0.1.0 // indirect
-	golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c // indirect
-	golang.org/x/text v0.0.0-20170901153044-bd91bbf73e9a // indirect
+	golang.org/x/sync v0.10.0 // indirect
+	golang.org/x/sys v0.28.0 // indirect
+	golang.org/x/text v0.21.0 // indirect
 	google.golang.org/appengine v1.0.0 // indirect
 	google.golang.org/genproto v0.0.0-20170904050139-595979c8a7bf // indirect
 	gopkg.in/airbrake/gobrake.v2 v2.0.9 // indirect
-	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
+	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
 	gopkg.in/gemnasium/logrus-airbrake-hook.v2 v2.1.2 // indirect
-	launchpad.net/gocheck v0.0.0-20140225173054-000000000087 // indirect
 )
 
 // pin the same version that was used prior to the `go mod` migration:

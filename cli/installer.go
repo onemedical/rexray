@@ -342,9 +342,9 @@ func createUnitFile(ctx apitypes.Context) error {
 
 const unitFileTemplate = `[Unit]
 Description={{.BinFileName}}
-Wants=systemd-udev-settle.service
+Wants=amazon-ecs-volume-plugin.service
 Before=docker.service
-After=systemd-udev-settle.service
+After=amazon-ecs-volume-plugin.service
 
 [Service]
 EnvironmentFile={{.EnvFilePath}}
